@@ -1,0 +1,29 @@
+/* Homepage */
+.name {
+    font-family: 'Righteous';
+    font-size: 2em;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Navigation bar */
+.menu {
+    margin-top: 15px;
+}
+
+.menu-item {
+    font-family: 'Righteous';
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.menu-item:hover {
+    color:#00ccff;
+    cursor: pointer;
+}
+
+.neuPhone-page {
+    color: #FF5252;
+}
+
+
