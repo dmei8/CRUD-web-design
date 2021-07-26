@@ -1,5 +1,5 @@
 /* Homepage */
-.name {
+#name {
     font-family: 'Righteous';
     font-size: 2em;
     margin-top: 10px;
@@ -15,6 +15,8 @@
     font-family: 'Righteous';
     font-size: 1.2em;
     margin-right: 15px;
+    text-decoration: none;
+    color: black;
 }
 
 .menu-item:hover {
@@ -26,4 +28,33 @@
     color: #FF5252;
 }
 
+p {
+    font-family: 'Righteous';
+}
 
+.the-new-box {
+    margin-top: 30vh;
+    height: 4vh;
+}
+
+#the-new-desc {
+    color: #FF5252;
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.big-name-box {
+
+}
+
+#big-name {
+    font-size: calc(24px + (70 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.price-box {
+    margin-top: 2vh;
+
+}
+
+#price {
+    font-size: 1.5vw;
+}
