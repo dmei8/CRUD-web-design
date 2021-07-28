@@ -34,7 +34,10 @@
     color: black;
 }
 
-.menu-item:hover {
+
+.menu-item:hover,
+#account-page:hover, 
+#dropdown > i:hover {
     color:#00ccff;
     cursor: pointer;
 }
@@ -98,22 +101,52 @@ p {
     cursor: pointer;
 }
 
-.dropdown {
+/*.dropdown {
     font-family: 'Righteous';
-}
+}*/
 
 #dropdown,
 .dropdown-items {
     text-align: center;
     list-style-type: none;
+    display: none;
+}
+
+#dropdown {
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.drop-menu {
+    position: absolute;
+    margin-top: 15px;
+    display: none;
+    margin-left: 35vw;
+    width: 17vw;
+    background-color: white;
+}
+
+#dropdown > i {
+    float: center;
+    margin-top: 20px;
+    color: black;
+}
+
+.dropdown-items > li > a {
+    margin-right: 0;
+}
+
+.dropdown-items {
+    padding: 0.6em 1em;
+}
+
+.item-line {
+    margin: 0.5em 0;
+    color: lightgray;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 3840px) {
-    #dropdown,
-    .dropdown-items {
-        display: none;
-    }
-
     .menu li {
         display: inline;
         margin-right: 4em;
@@ -161,11 +194,6 @@ p {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-    #dropdown,
-    .dropdown-items {
-        display: none;
-    }
-
     .menu li {
          display: inline;
          margin-right: 10px;
@@ -193,6 +221,7 @@ p {
     #dropdown {
         display: block;
         width: 5em;
+        margin-top: 0;
     }
 
     .drop-menu {
@@ -202,6 +231,10 @@ p {
         margin-left: 35vw;
         width: 17vw;
         background-color: white;
+    }
+
+    .drop-menu:hover .dropdown-items {
+        display: block;
     }
 
     #dropdown > i {
