@@ -1,20 +1,35 @@
 /* Homepage */
+.container-fluid {
+    margin: 0 4em 0 4em;
+    width: 100%;
+}
+
+.name {
+    margin-top: 10px;
+    padding-right: 0;
+}
+
 #name {
     font-family: 'Righteous';
     font-size: 2em;
-    margin-top: 10px;
+    text-decoration: none;
     color: black;
 }
-
 /* Navigation bar */
 .menu {
     margin-top: 15px;
+    padding-left: 0;
+    padding-top: 0.5em;
+}
+
+.menu ul {
+    margin-bottom: 0;
 }
 
 .menu-item {
     font-family: 'Righteous';
-    font-size: 1.2em;
-    margin-right: 15px;
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+    margin-right: 2em;
     text-decoration: none;
     color: black;
 }
@@ -32,8 +47,13 @@ p {
     font-family: 'Righteous';
 }
 
+.info-items {
+    padding-left: 17vw;
+    padding-right: 0;
+}
+
 .the-new-box {
-    margin-top: 30vh;
+    margin-top: 25vh;
     height: 4vh;
 }
 
@@ -42,19 +62,268 @@ p {
     font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.big-name-box {
-
-}
-
 #big-name {
     font-size: calc(24px + (70 - 24) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.price-box {
-    margin-top: 2vh;
-
+    margin-bottom: 0.2em;
 }
 
 #price {
-    font-size: 1.5vw;
+    font-size: calc(14px + (23 - 14) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 1.5em;
+}
+
+.product-button {
+    border-radius: 30px;
+    width: 7em;
+    height: 2.8em;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Righteous';
+}
+
+.account {
+    margin-top: 15px;
+    padding-top: 0.5em;
+}
+
+#account-page {
+    font-family: 'Righteous';
+    text-decoration: none;
+    color: black;
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+    margin-right: 4em;
+}
+
+#account-page:hover {
+    color:#00ccff;
+    cursor: pointer;
+}
+
+.dropdown {
+    font-family: 'Righteous';
+}
+
+#dropdown,
+.dropdown-items {
+    text-align: center;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3840px) {
+    #dropdown,
+    .dropdown-items {
+        display: none;
+    }
+
+    .menu li {
+        display: inline;
+        margin-right: 4em;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1620px) {
+    .menu li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    #phone-img1 {
+        width: 30vw;
+    }
+
+    .account {
+        padding-right: 7vw;
+        padding-left: 0;
+    }
+
+    #account-page {
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1499px) {
+    .menu li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    #phone-img1 {
+        width: 30vw;
+    }
+
+    .account {
+        padding-right: 8vw;
+        padding-left: 0;
+    }
+
+    #account-page {
+        margin-right: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    #dropdown,
+    .dropdown-items {
+        display: none;
+    }
+
+    .menu li {
+         display: inline;
+         margin-right: 10px;
+    }
+
+    #phone-img1 {
+        width: 30vw;
+    }
+
+    .account {
+        padding-right: 9vw;
+        padding-left: 0;
+    }
+
+    #account-page {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1023px) {
+    .menu {
+        display: none;
+    }
+
+    #dropdown {
+        display: block;
+        width: 5em;
+    }
+
+    .drop-menu {
+        position: absolute;
+        margin-top: 15px;
+        display: block;
+        margin-left: 35vw;
+        width: 17vw;
+        background-color: white;
+    }
+
+    #dropdown > i {
+        float: center;
+        margin-top: 20px;
+    }
+
+    .dropdown-items > li > a {
+        margin-right: 0;
+    }
+
+    .dropdown-items > li {
+        margin-bottom: 0.5em;
+    }
+
+    .dropdown-items {
+        padding: 0.6em 1em;
+    }
+
+    .account {
+        padding-left: 0;
+        margin-left: auto;
+        padding-right: 11em;
+    }
+
+    #account-page {
+        margin-right: 0;
+    }
+}
+/*@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    #dropdown,
+    .dropdown-items {
+        display: none;
+    }
+
+    .menu li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    #phone-img1 {
+        width: 30vw;
+    }
+
+    .account {
+        padding-right: 9vw;
+    }
+
+    #account-page {
+        margin-right: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 1023px) {
+    .menu {
+        display: none;
+    }
+
+    #dropdown {
+        display: block;
+    }
+
+    .name {
+        width: 25vw;
+        position: absolute;
+    }
+
+    #dropdown > i {
+        float: center;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #name {
+        text-align: center;
+    }
+
+    #the-new-desc,
+    #big-name,
+    #price {
+        text-align: center;
+    }
+
+    .the-new-box{
+        margin-top: 3em;
+    }
+
+    .price-button-box {
+        width: 8em;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .product-button {
+        margin-bottom: 0.6em;
+    }
+}*/
+
+.product-button {
+    background-color: chartreuse;
+    border: none;
+    color: black;
+}
+
+.phones-pic1 {
+    margin-top: 9.5em;
+    padding-left: 7vw;
+}
+
+#info {
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+#space {
+    margin-right: 0.6em;
+}
+
+.line {
+    width: 2000px;
+    margin-top: 0.5em;
+    height: 0px;
 }
