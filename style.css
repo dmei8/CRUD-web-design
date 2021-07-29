@@ -1,12 +1,12 @@
 /* Homepage */
 .container-fluid {
-    margin: 0 4em 0 4em;
     width: 100%;
 }
 
 .name {
     margin-top: 10px;
     padding-right: 0;
+    padding-left: 5vw;
 }
 
 #name {
@@ -15,7 +15,13 @@
     text-decoration: none;
     color: black;
 }
+
 /* Navigation bar */
+
+.nav-bar {
+    padding-bottom: 2vh;
+}
+
 .menu {
     margin-top: 15px;
     padding-left: 0;
@@ -53,6 +59,10 @@ p {
 .info-items {
     padding-left: 17vw;
     padding-right: 0;
+}
+
+.the-new {
+    padding-bottom: 15vh;
 }
 
 .the-new-box {
@@ -94,11 +104,6 @@ p {
     color: black;
     font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
     margin-right: 4em;
-}
-
-#account-page:hover {
-    color:#00ccff;
-    cursor: pointer;
 }
 
 /*.dropdown {
@@ -146,10 +151,32 @@ p {
     color: lightgray;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 3840px) {
+.product-button {
+    background-color: #5EFF6E;
+    border: none;
+    color: black;
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+    width: 8vw;
+}
+
+.product-button:hover {
+    background-color: #00ccff;
+    cursor: pointer;
+}
+
+.phones-pic1 {
+    margin-top: 20vh;
+    padding-left: 5vw;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 9000px) {
     .menu li {
         display: inline;
         margin-right: 4em;
+    }
+    
+    #phones-img1 {
+        width: 50vw;
     }
 }
 
@@ -216,6 +243,10 @@ p {
 @media only screen and (min-width: 540px) and (max-width: 1023px) {
     .menu {
         display: none;
+    }
+
+    #phone-img1 {
+        width: 25vw;
     }
 
     #dropdown {
@@ -335,20 +366,11 @@ p {
     }
 }*/
 
-.product-button {
-    background-color: chartreuse;
-    border: none;
-    color: black;
-}
-
-.phones-pic1 {
-    margin-top: 9.5em;
-    padding-left: 7vw;
-}
-
 #info {
     text-decoration: none;
     margin-top: 1em;
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+    color: #3284FF;
 }
 
 #space {
@@ -359,4 +381,129 @@ p {
     width: 2000px;
     margin-top: 0.5em;
     height: 0px;
+}
+
+.phone-chipset {
+    padding-left: 7vw;
+}
+
+#purple-phone {
+    width: 14vw;
+}
+
+/*.chipset {
+    box-shadow: 0 -0.1rem 1rem rgba(0,0,0,0.15) !important;
+}*/
+
+.chipset {
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+}
+
+.chipset-info {
+    padding-right: 15vw;
+    padding-top: 10vh;
+}
+
+#chip-title {
+    font-family: 'Righteous';
+    text-align: left;
+    color: #434343;
+    font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#chip-title i {
+    font-style: normal;
+    color: #B250FF;
+}
+
+.chipset-desc {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: left;
+}
+
+.chipset-desc h4 {
+    color: #696969;
+    font-family: 'Quicksand';
+    line-height: 3.5vh;
+}
+
+.chipset-info a {
+    font-family: 'Quicksand';
+    text-decoration: none;
+    text-align: left;
+    color: #3284FF;
+}
+
+.camera-moments {
+    padding-left: 16vw;
+    padding-top: 7vh;
+}
+
+.camera-phones {
+    padding-right: 8vw;
+}
+
+.camera-moments h2 {
+    text-align: left;
+    font-family: 'Righteous';
+    color: #434343;
+    font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 9vh;
+}
+
+.camera-moments h2 > i {
+    font-style: normal;
+    color: #FFA8AD;
+    font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.camera-moments h4 {
+    text-align: left;
+    font-family: 'Quicksand';
+    line-height: 4vh;
+    color: #696969;
+    width: 21vw;
+    margin-top: 3.5vh;
+}
+
+/*.pink-rect {
+    position: absolute;
+    width: 100rem;
+    top: 108rem;
+    left: 70rem;
+    z-index: -1;
+}*/
+
+
+.models {
+    padding-top: 8vh;
+}
+
+.choose {
+    margin: 5vh;
+}
+
+.choose h2 {
+    font-family: 'Righteous';
+    color: #515151;
+    margin-bottom: 2vh;
+    font-size: calc(24px + (38 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.choose a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3284FF;
+}
+
+.two-phones h3 {
+    font-family: 'Righteous';
+}
+
+.r-model ul,
+.r-pro-model ul {
+    list-style-type: none;
+    font-family: 'Quicksand';
 }
