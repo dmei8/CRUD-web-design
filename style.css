@@ -43,7 +43,7 @@
 
 .menu-item:hover,
 #account-page:hover, 
-#dropdown > i:hover {
+.dropdown > i:hover {
     color:#00ccff;
     cursor: pointer;
 }
@@ -57,44 +57,29 @@ p {
 }
 
 .info-items {
-    padding-left: 15vw;
+    padding-left: 20vw;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.info-items div {
-
-}
-
 .the-new {
-    padding: 12vh 0;
-}
-
-.the-new-box {
-    height: 4vh;
+    padding: 8vh 0;
 }
 
 #the-new-desc {
     color: #FF5252;
     font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 0;
 }
 
 #big-name {
     font-size: calc(24px + (70 - 24) * ((100vw - 300px) / (1600 - 300)));
-    margin-bottom: 0.2em;
+    margin-bottom: 0;
 }
 
 #price {
     font-size: calc(14px + (23 - 14) * ((100vw - 300px) / (1600 - 300)));
-    margin-bottom: 1.5em;
-}
-
-.product-button {
-    border-radius: 30px;
-    width: 7em;
-    height: 2.8em;
-    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
-    font-family: 'Righteous';
+    margin-bottom: 3vh;
 }
 
 .account {
@@ -113,37 +98,54 @@ p {
     font-family: 'Righteous';
 }*/
 
-#dropdown,
+.dropdown,
 .dropdown-items {
     text-align: center;
     list-style-type: none;
     display: none;
 }
 
-#dropdown {
-    margin-left: auto;
+.dropdown {
+    width: 1em;
+    position: relative;
     margin-bottom: 0;
-    margin-top: 10px;
+    padding: 0;
+    margin-top: 0.5em;
 }
 
 .drop-menu {
     position: absolute;
     margin-top: 15px;
     display: none;
+    padding: 0;
 }
 
-#dropdown > i {
+.dropdown > i {
     float: center;
-    margin-top: 20px;
     color: black;
+    padding-left: 0.5em;
 }
 
 .dropdown-items > li > a {
     margin-right: 0;
 }
 
+.dropdown-items > li {
+    margin-bottom: 0.5em;
+}
+
 .dropdown-items {
-    padding: 0.6em 1em;
+    margin: auto;
+    padding: 0.5em 0;
+    background-color: white;
+    margin-left: 1.5em;
+}
+
+.list {
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    padding: 0;
 }
 
 .item-line {
@@ -151,18 +153,15 @@ p {
     color: lightgray;
 }
 
-.price-button-box div {
-    
-}
-
 .product-button {
+    border-radius: 30px;
+    width: 6em;
+    height: 2.8em;
     background-color: #5EFF6E;
     border: none;
     color: black;
-    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
-    width: 6em + 2vw;
-    margin-right: 2vw;
-    
+    font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Righteous';
 }
 
 .product-button:hover {
@@ -174,6 +173,7 @@ p {
     margin-top: 8vh;
     margin-bottom: 8vh;
     padding-left: 5vw;
+    padding-right: 15vw;
 }
 
 .menu li {
@@ -181,7 +181,26 @@ p {
     margin-right: 4em;
 }
 
-@media only screen and (min-width: 1921px) and (max-width: 9000px) {
+@media only screen and (min-width: 2561px) and (max-width: 5120px) {
+    #phone-img1 {
+        height: 100%;
+    }
+
+    .phones-pic1 {
+        margin: 0;
+        padding-left: 8vw;
+    }
+
+    .info-items {
+        padding-left: 25vw;
+    }
+    
+    .the-new {
+        padding: 8vh 0;
+    }
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
     #phone-img1 {
         height: 100%;
     }
@@ -232,7 +251,6 @@ p {
     #phone-img1 {
         width: 30vw;
     }
-
 }
 
 @media only screen and (min-width: 540px) and (max-width: 1023px) {
@@ -244,14 +262,8 @@ p {
         width: 30vw;
     }
 
-    .phones-pic1 {
-
-    }
-
-    #dropdown {
+    .dropdown {
         display: block;
-        width: 5em;
-        margin-top: 0;
     }
 
     .nav-bar {
@@ -262,29 +274,10 @@ p {
         display: block;
         position: absolute;
         left: 50%;
-        width: 17vw;
-        background-color: white;
     }
 
     .drop-menu:hover .dropdown-items {
         display: block;
-    }
-
-    #dropdown > i {
-        float: center;
-        margin-top: 20px;
-    }
-
-    .dropdown-items > li > a {
-        margin-right: 0;
-    }
-
-    .dropdown-items > li {
-        margin-bottom: 0.5em;
-    }
-
-    .dropdown-items {
-        padding: 0.6em 1em;
     }
 
     .account {
