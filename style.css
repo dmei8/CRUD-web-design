@@ -4,14 +4,14 @@
 }
 
 .name {
-    margin-top: 10px;
+    margin-top: 9px;
     padding-right: 0;
     padding-left: 5vw;
 }
 
 #name {
     font-family: 'Righteous';
-    font-size: 2em;
+    font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
     text-decoration: none;
     color: black;
 }
@@ -19,12 +19,11 @@
 /* Navigation bar */
 
 .nav-bar {
-    padding-bottom: 2vh;
+    padding-bottom: 2.3vh;
 }
 
 .menu {
-    margin-top: 15px;
-    padding-left: 0;
+    margin-top: 2vh;
     padding-top: 0.5em;
 }
 
@@ -57,7 +56,7 @@ p {
 }
 
 .info-items {
-    padding-left: 20vw;
+    padding-left: 18vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -83,15 +82,14 @@ p {
 }
 
 .account {
-    margin-top: 15px;
-    padding-top: 0.5em;
+    margin-top: 3vh;
 }
 
 #account-page {
     font-family: 'Righteous';
     text-decoration: none;
     color: black;
-    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /*.dropdown {
@@ -115,7 +113,7 @@ p {
 
 .drop-menu {
     position: absolute;
-    margin-top: 15px;
+    margin-top: 12px;
     display: none;
     padding: 0;
 }
@@ -242,7 +240,7 @@ p {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
     .menu li {
          display: inline;
          margin-right: 10px;
@@ -251,9 +249,14 @@ p {
     #phone-img1 {
         width: 30vw;
     }
+    
+    .account {
+        padding-left: 0;
+        padding-right: 2em;
+    }
 }
 
-@media only screen and (min-width: 540px) and (max-width: 1023px) {
+@media only screen and (min-width: 500px) and (max-width: 766px) {
     .menu {
         display: none;
     }
@@ -283,6 +286,30 @@ p {
     .account {
         position: absolute;
         right: 3%;
+        width: 22vw;
+    }
+
+    .info-items {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .price-button-box div {
+        margin-bottom: 0.7em;
+    }
+
+    .price-button-box button {
+        width: 8em;
+    }
+
+    .phones-pic1 {
+        padding-left: 8em;
+        text-align: center;
+    }
+
+    #phone-img1 {
+        width: 48vw;
     }
 }
 /*@media only screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -489,41 +516,9 @@ p {
     color: #3284FF;
 }
 
-.two-phones h3 {
-    font-family: 'Righteous';
-    text-align: left;
-}
-
 .r-model,
 .r-pro-model {
     margin-top: 2vh;
-}
-
-.r-model ul,
-.r-pro-model ul {
-    list-style-type: none;
-    font-family: 'Quicksand';
-    text-align: left;
-    padding-left: 0;
-    color: #5F5F5F;
-    padding-right: 12vw;
-}
-
-.r-model ul > li,
-.r-pro-model ul > li {
-    margin-bottom: 2.5vh;
-}
-
-.r-model h4,
-.r-pro-model h4 {
-    text-align: left;
-}
-
-.r-model h4,
-.r-pro-model h4 {
-    font-family: 'Quicksand';
-    margin: 3.5vh 0;
-    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .phone-div img,
@@ -533,14 +528,6 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.text-1 {
-
-}
-
-.text-2 {
-    padding-left: 13.9vw;
 }
 
 .phone-div,
@@ -555,4 +542,40 @@ p {
 
 .phone-div-2 {
     margin-right: 10vw;
+}
+
+.phone-name {
+    font-family: 'Righteous';
+    margin-left: 10vw;
+}
+
+.price-from {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10vw;
+}
+
+.phone-name-2 {
+    font-family: 'Righteous';
+    margin-right: 10vw;
+}
+
+.price-from-2 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+    margin-right: 10vw;
+}
+
+.r-model ul {
+    margin-left: 10vw;
+}
+
+.r-model ul > li,
+.r-pro-model ul > li{
+    list-style-type: none;
+    text-align: left;
+    font-family: 'Quicksand';
+    margin-bottom: 0.6em;
 }
