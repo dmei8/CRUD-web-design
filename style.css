@@ -155,7 +155,7 @@ p {
     border-radius: 30px;
     width: 6em;
     height: 2.8em;
-    background-color: #5EFF6E;
+    background-color: #FBFF3D;
     border: none;
     color: black;
     font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (1600 - 300)));
@@ -413,8 +413,10 @@ p {
 }*/
 
 .chipset {
-    padding-top: 12vh;
-    padding-bottom: 8vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgb(241, 230, 255);
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
 }
 
 .chipset-info {
@@ -426,7 +428,7 @@ p {
     font-family: 'Righteous';
     text-align: left;
     color: #434343;
-    font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #chip-title i {
@@ -443,7 +445,8 @@ p {
 .chipset-desc h4 {
     color: #696969;
     font-family: 'Quicksand';
-    line-height: 3.5vh;
+    line-height: 4.5vh;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .chipset-info a {
@@ -451,6 +454,13 @@ p {
     text-decoration: none;
     text-align: left;
     color: #3284FF;
+}
+
+.camera-showcase {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgb(212, 245, 255);
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
 }
 
 .camera-moments {
@@ -466,23 +476,24 @@ p {
     text-align: left;
     font-family: 'Righteous';
     color: #434343;
-    font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
     line-height: 9vh;
 }
 
 .camera-moments h2 > i {
     font-style: normal;
-    color: #FFA8AD;
-    font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (1600 - 300)));
+    color: #12dafd;
+    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .camera-moments h4 {
     text-align: left;
     font-family: 'Quicksand';
-    line-height: 4vh;
+    line-height: 4.5vh;
     color: #696969;
     width: 21vw;
     margin-top: 3.5vh;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /*.pink-rect {
@@ -500,7 +511,7 @@ p {
 
 .choose {
     margin-top: 7vh;
-    margin-bottom: 7vh;
+    margin-bottom: 5.5vh;
 }
 
 .choose h2 {
@@ -516,24 +527,27 @@ p {
     color: #3284FF;
 }
 
+.models {
+    
+}
+
 .r-model,
 .r-pro-model {
     margin-top: 2vh;
 }
 
-.phone-div img,
+/*.phone-div img,
 .phone-div-2 img {
     margin: auto;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 
 .phone-div,
 .phone-div-2 {
-   height: 364px;
-   position: relative;
+    height: 364px;
 }
 
 .phone-div {
@@ -544,7 +558,8 @@ p {
     margin-right: 10vw;
 }
 
-.phone-name {
+/*.phone-name {
+    margin-top: 0.8em;
     font-family: 'Righteous';
     margin-left: 10vw;
 }
@@ -557,6 +572,7 @@ p {
 }
 
 .phone-name-2 {
+    margin-top: 0.8em;
     font-family: 'Righteous';
     margin-right: 10vw;
 }
@@ -569,13 +585,80 @@ p {
 }
 
 .r-model ul {
+    margin-top: 1.5em;
     margin-left: 10vw;
+    padding: 0;
+}
+
+.r-pro-model ul {
+    margin-top: 1.5em;
+    margin-right: 10vw;
+    padding: 0;
 }
 
 .r-model ul > li,
 .r-pro-model ul > li{
     list-style-type: none;
-    text-align: left;
     font-family: 'Quicksand';
     margin-bottom: 0.6em;
+}
+
+.models button {
+    margin-top: 1em;
+}
+
+.models a {
+    text-decoration: none;
+}*/
+
+.text-1 {
+    text-align: left;
+    margin-left: 23.5vw;
+}
+
+.phone-name {
+    margin-top: 0.8em;
+    font-family: 'Righteous';
+}
+
+.price-from {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.phone-name-2 {
+    margin-top: 0.8em;
+    font-family: 'Righteous';
+}
+
+.price-from-2 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.r-model ul {
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.r-pro-model ul {
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.r-model ul > li,
+.r-pro-model ul > li{
+    list-style-type: none;
+    font-family: 'Quicksand';
+    margin-bottom: 0.6em;
+}
+
+.models button {
+    margin-top: 1em;
+}
+
+.models a {
+    text-decoration: none;
 }
