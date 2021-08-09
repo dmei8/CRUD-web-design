@@ -404,10 +404,6 @@ p {
     padding-left: 7vw;
 }
 
-#purple-phone {
-    width: 14vw;
-}
-
 /*.chipset {
     box-shadow: 0 -0.1rem 1rem rgba(0,0,0,0.15) !important;
 }*/
@@ -417,6 +413,10 @@ p {
     padding-bottom: 10vh;
     background-color: rgb(241, 230, 255);
     box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+}
+
+.chipset img {
+    width: 330px;
 }
 
 .chipset-info {
@@ -470,6 +470,10 @@ p {
 
 .camera-phones {
     padding-right: 8vw;
+}
+
+.camera-phones img {
+    width: 420px;
 }
 
 .camera-moments h2 {
@@ -527,10 +531,6 @@ p {
     color: #3284FF;
 }
 
-.models {
-    
-}
-
 .r-model,
 .r-pro-model {
     margin-top: 2vh;
@@ -557,59 +557,6 @@ p {
 .phone-div-2 {
     margin-right: 10vw;
 }
-
-/*.phone-name {
-    margin-top: 0.8em;
-    font-family: 'Righteous';
-    margin-left: 10vw;
-}
-
-.price-from {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-size: 20px;
-    margin-left: 10vw;
-}
-
-.phone-name-2 {
-    margin-top: 0.8em;
-    font-family: 'Righteous';
-    margin-right: 10vw;
-}
-
-.price-from-2 {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-size: 20px;
-    margin-right: 10vw;
-}
-
-.r-model ul {
-    margin-top: 1.5em;
-    margin-left: 10vw;
-    padding: 0;
-}
-
-.r-pro-model ul {
-    margin-top: 1.5em;
-    margin-right: 10vw;
-    padding: 0;
-}
-
-.r-model ul > li,
-.r-pro-model ul > li{
-    list-style-type: none;
-    font-family: 'Quicksand';
-    margin-bottom: 0.6em;
-}
-
-.models button {
-    margin-top: 1em;
-}
-
-.models a {
-    text-decoration: none;
-}*/
 
 .text-1 {
     text-align: left;
@@ -661,4 +608,36 @@ p {
 
 .models a {
     text-decoration: none;
+}
+
+.footer {
+    background-color: #F8F8F8;
+    font-family: 'Quicksand';
+    padding: 2em 25em;
+    text-align: left;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul > li {
+    margin-bottom: 0.8em;
+}
+
+.footer ul > li a {
+    text-decoration: none;
+    color: #696969;
+}
+
+.footer ul > li a:hover {
+    color: #00ccff;
+}
+
+.list-name {
+    color: black;
+}
+
+.copyright {
+    background-color: #F8F8F8;
 }
