@@ -401,7 +401,7 @@ p {
 }
 
 .phone-chipset {
-    padding-left: 7vw;
+    padding-left: 8.5vw;
 }
 
 /*.chipset {
@@ -411,7 +411,7 @@ p {
 .chipset {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    background-color: rgb(241, 230, 255);
+    background-color: rgb(246, 240, 255);
     box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
 }
 
@@ -459,12 +459,12 @@ p {
 .camera-showcase {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    background-color: rgb(212, 245, 255);
+    background-color: rgb(234, 240, 255);
     box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
 }
 
 .camera-moments {
-    padding-left: 16vw;
+    padding-left: 18vw;
     padding-top: 12vh;
 }
 
@@ -473,7 +473,7 @@ p {
 }
 
 .camera-phones img {
-    width: 420px;
+    width: 400px;
 }
 
 .camera-moments h2 {
@@ -511,6 +511,7 @@ p {
 
 .models {
     padding-top: 8vh;
+    padding-bottom: 10vh;
 }
 
 .choose {
@@ -536,14 +537,14 @@ p {
     margin-top: 2vh;
 }
 
-/*.phone-div img,
+.phone-div img,
 .phone-div-2 img {
     margin: auto;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-}*/
+}
 
 .phone-div,
 .phone-div-2 {
@@ -552,15 +553,22 @@ p {
 
 .phone-div {
     margin-left: 10vw;
+    position: relative;
 }
 
 .phone-div-2 {
     margin-right: 10vw;
+    position: relative;
 }
 
 .text-1 {
     text-align: left;
-    margin-left: 23.5vw;
+    margin-left: 22vw;
+}
+
+.text-2 {
+    text-align: left;
+    margin-left: 11.5vw;
 }
 
 .phone-name {
@@ -613,7 +621,8 @@ p {
 .footer {
     background-color: #F8F8F8;
     font-family: 'Quicksand';
-    padding: 2em 25em;
+    padding: 2em 19em;
+    padding-bottom: 1em;
     text-align: left;
 }
 
@@ -640,4 +649,12 @@ p {
 
 .copyright {
     background-color: #F8F8F8;
+    font-family: 'Quicksand';
+    color: #B0B0B0;
+    padding: 1em 21em;
+}
+
+#last-line {
+    margin: 0;
+    color: #a3a3a3;
 }
