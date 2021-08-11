@@ -72,7 +72,7 @@ p {
 }
 
 #big-name {
-    font-size: calc(24px + (70 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(24px + (60 - 24) * ((100vw - 300px) / (1600 - 300)));
     margin-bottom: 0;
 }
 
@@ -180,7 +180,8 @@ p {
 }
 
 @media only screen and (min-width: 2561px) and (max-width: 5120px) {
-    #phone-img1 {
+    #phone-img1,
+    #purple-phone {
         height: 100%;
     }
 
@@ -216,12 +217,13 @@ p {
         margin-right: 1em;
     }
 
-    #phone-img1 {
+    #phone-img1,
+    #cameraphones-pic {
         width: 30vw;
     }
 
-    #cameraphones-pic {
-        width: 30vw;
+    #purple-phone {
+        width: 25vw;
     }
 }
 
@@ -231,12 +233,13 @@ p {
         margin-right: 10px;
     }
 
-    #phone-img1 {
+    #phone-img1,
+    #cameraphones-pic {
         width: 30vw;
     }
 
-    #cameraphones-pic {
-        width: 30vw;
+    #purple-phone {
+        width: 20vw;
     }
 }
 
@@ -246,10 +249,15 @@ p {
          margin-right: 10px;
     }
 
-    #phone-img1 {
+    #phone-img1,
+    #cameraphones-pic {
         width: 30vw;
     }
     
+    #purple-phone {
+        width: 20vw;
+    }
+
     .account {
         padding-left: 0;
         padding-right: 2em;
@@ -261,8 +269,13 @@ p {
         display: none;
     }
 
-    #phone-img1 {
+    #phone-img1,
+    #cameraphones-pic {
         width: 30vw;
+    }
+
+    #purple-phone {
+        width: 20vw;
     }
 
     .dropdown {
@@ -306,10 +319,6 @@ p {
     .phones-pic1 {
         padding-left: 8em;
         text-align: center;
-    }
-
-    #phone-img1 {
-        width: 48vw;
     }
 }
 /*@media only screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -481,7 +490,7 @@ p {
     font-family: 'Righteous';
     color: #434343;
     font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 9vh;
+    line-height: 8vh;
 }
 
 .camera-moments h2 > i {
@@ -535,41 +544,18 @@ p {
 .r-model,
 .r-pro-model {
     margin-top: 2vh;
-}
-
-.phone-div img,
-.phone-div-2 img {
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.phone-div,
-.phone-div-2 {
-    height: 364px;
-}
-
-.phone-div {
-    margin-left: 10vw;
     position: relative;
 }
 
-.phone-div-2 {
-    margin-right: 10vw;
-    position: relative;
+.r-model{
+    padding-left: 23vw;
+    padding-top: 40px;
 }
 
-.text-1 {
-    text-align: left;
-    margin-left: 22vw;
+.r-pro-model {
+    padding-left: 13vw;
 }
 
-.text-2 {
-    text-align: left;
-    margin-left: 11.5vw;
-}
 
 .phone-name {
     margin-top: 0.8em;
@@ -657,4 +643,18 @@ p {
 #last-line {
     margin: 0;
     color: #a3a3a3;
+}
+
+form {
+    width: 25em;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+table, th, td {
+    padding-top: 5px;
+}
+
+.account-title {
+    margin-bottom: 0.7em;
 }
