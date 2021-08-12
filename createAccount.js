@@ -3,6 +3,7 @@ var password = document.getElementById('pass-input')
 var password2 = document.getElementById('pass-re-input')
 
 var name_message = document.getElementById('name-message');
+var pass_rules = document.getElementById('pass-rules');
 var pass_message = document.getElementById('pass-message');
 
 function checkName() {
@@ -17,13 +18,27 @@ function checkName() {
     }
 }
 
-function matchingPass() {
-    if (password.value.length == password2.value.length) {
-        if (password.value != password2.value) {
-            pass_message.innerHTML = "Passwords do not match";
-            pass_message.style.color = "crimson";
-        } else {
-            pass_message.innerHTML = "";
+function checkPassword() {
+    var re = /\d/;
+
+    if (password.value.length < 8 || password.value.length > 15) {
+        pass_rules.innerHTML = "Password must be between 8-15 characters.";
+        pass_rules.style.color = "crimson";
+    } else {
+        pass_rules.innerHTML = "";
+        if (!re.test(password.value)) {
+            pass_rules.innerHTML = "Your password must contain at least 1 special character and 1 letter.";
+            pass_rules.style.color = "crimson";
         }
-    } 
+    }
+}
+
+function matchingPass() {
+   if (password.value != password2.value) {
+        pass_message.innerHTML = "Passwords do not match";
+        pass_message.style.color = "crimson";
+    } else {
+        pass_message.innerHTML = "Passwords match";
+        pass_message.style.color = "green";
+    }
 }
