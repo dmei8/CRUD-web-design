@@ -179,6 +179,275 @@ p {
     margin-right: 4em;
 }
 
+#info {
+    text-decoration: none;
+    margin-top: 1em;
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+    color: #3284FF;
+}
+
+#space {
+    margin-right: 0.6em;
+}
+
+.line {
+    width: 2000px;
+    margin-top: 0.5em;
+    height: 0px;
+}
+
+.phone-chipset {
+    padding-left: 8.5vw;
+}
+
+/*.chipset {
+    box-shadow: 0 -0.1rem 1rem rgba(0,0,0,0.15) !important;
+}*/
+
+.chipset {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgb(246, 240, 255);
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+}
+
+.chipset img {
+    width: 330px;
+}
+
+.chipset-info {
+    padding-right: 15vw;
+    padding-top: 10vh;
+}
+
+#chip-title {
+    font-family: 'Righteous';
+    text-align: left;
+    color: #434343;
+    font-size: calc(24px + (46 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#chip-title i {
+    font-style: normal;
+    color: #B250FF;
+}
+
+.chipset-desc {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: left;
+}
+
+.chipset-desc h4 {
+    color: #696969;
+    font-family: 'Quicksand';
+    line-height: 4.5vh;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.chipset-info a {
+    font-family: 'Quicksand';
+    text-decoration: none;
+    text-align: left;
+    color: #3284FF;
+}
+
+.camera-showcase {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgb(234, 240, 255);
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+}
+
+.camera-moments {
+    padding-left: 18vw;
+    padding-top: 12vh;
+    padding-right: 0;
+}
+
+.camera-phones {
+    padding-right: 8vw;
+}
+
+.camera-phones img {
+    width: 400px;
+}
+
+.camera-moments h2 {
+    text-align: left;
+    font-family: 'Righteous';
+    color: #434343;
+    font-size: calc(24px + (46 - 24) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 8vh;
+}
+
+.camera-moments h2 > i {
+    font-style: normal;
+    color: #12dafd;
+    font-size: calc(24px + (46 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.camera-moments h4 {
+    text-align: left;
+    font-family: 'Quicksand';
+    line-height: 4.5vh;
+    color: #696969;
+    width: 21vw;
+    margin-top: 3.5vh;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*.pink-rect {
+    position: absolute;
+    width: 100rem;
+    top: 108rem;
+    left: 70rem;
+    z-index: -1;
+}*/
+
+
+.models {
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+}
+
+.choose {
+    margin-top: 7vh;
+    margin-bottom: 5.5vh;
+}
+
+.choose h2 {
+    font-family: 'Righteous';
+    color: #515151;
+    margin-bottom: 2vh;
+    font-size: calc(24px + (38 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.choose a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3284FF;
+}
+
+.r-model,
+.r-pro-model {
+    margin-top: 2vh;
+    position: relative;
+}
+
+.r-model{
+    padding-left: 23vw;
+    padding-top: 40px;
+}
+
+.r-pro-model {
+    padding-left: 13vw;
+}
+
+
+.phone-name {
+    margin-top: 0.8em;
+    font-family: 'Righteous';
+}
+
+.price-from {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.phone-name-2 {
+    margin-top: 0.8em;
+    font-family: 'Righteous';
+}
+
+.price-from-2 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.r-model ul {
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.r-pro-model ul {
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.r-model ul > li,
+.r-pro-model ul > li{
+    list-style-type: none;
+    font-family: 'Quicksand';
+    margin-bottom: 0.6em;
+}
+
+.models button {
+    margin-top: 1em;
+}
+
+.models a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #F8F8F8;
+    font-family: 'Quicksand';
+    padding: 5vh 20vw;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul > li {
+    margin-bottom: 0.8em;
+}
+
+.footer ul > li a {
+    text-decoration: none;
+    color: #696969;
+}
+
+.footer ul > li a:hover {
+    color: #00ccff;
+}
+
+.list-name {
+    color: black;
+}
+
+.copyright {
+    background-color: #F8F8F8;
+    font-family: 'Quicksand';
+    color: #B0B0B0;
+    padding: 3vh 21.5vw;
+}
+
+#last-line {
+    margin: 0;
+    color: #a3a3a3;
+}
+
+form {
+    width: 25em;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+table, th, td {
+    padding-top: 5px;
+}
+
+.account-title {
+    margin-bottom: 0.7em;
+}
+
+
 @media only screen and (min-width: 2561px) and (max-width: 5120px) {
     #phone-img1,
     #purple-phone {
@@ -217,14 +486,18 @@ p {
         margin-right: 1em;
     }
 
-    #phone-img1,
-    #cameraphones-pic {
+    #phone-img1 {
         width: 30vw;
     }
 
     #purple-phone {
+        width: 20vw;
+    }
+
+    #cameraphones-pic {
         width: 25vw;
     }
+
 }
 
 @media only screen and (min-width: 1199px) and (max-width: 1499px) {
@@ -233,9 +506,12 @@ p {
         margin-right: 10px;
     }
 
-    #phone-img1,
-    #cameraphones-pic {
+    #phone-img1 {
         width: 30vw;
+    }
+
+    #cameraphones-pic { 
+        width: 25vw;
     }
 
     #purple-phone {
@@ -262,9 +538,46 @@ p {
         padding-left: 0;
         padding-right: 2em;
     }
+
+    .r-model img {
+        width: 11.3em;
+    }
+
+    .r-pro-model img {
+        width: 12em;
+    }
+
+    .r-model{
+        padding-left: 23vw;
+        padding-top: 23px;
+    }
+    
+    .r-pro-model {
+        padding-left: 10vw;
+        padding-right: 10em;
+    }
+
+    .phone-chipset {
+        padding-top: 10vh;
+    }
+
+    .chipset-info {
+        padding-bottom: 10vh;
+    }
+
+    #chip-title,
+    #moments-intro,
+    #moments-intro > i {
+        font-size: 2rem;
+    }
+
+    #chip-desc,
+    #moments-desc {
+        font-size: 20px;
+    }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 766px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
     .menu {
         display: none;
     }
@@ -392,269 +705,3 @@ p {
     }
 }*/
 
-#info {
-    text-decoration: none;
-    margin-top: 1em;
-    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
-    color: #3284FF;
-}
-
-#space {
-    margin-right: 0.6em;
-}
-
-.line {
-    width: 2000px;
-    margin-top: 0.5em;
-    height: 0px;
-}
-
-.phone-chipset {
-    padding-left: 8.5vw;
-}
-
-/*.chipset {
-    box-shadow: 0 -0.1rem 1rem rgba(0,0,0,0.15) !important;
-}*/
-
-.chipset {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    background-color: rgb(246, 240, 255);
-    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
-}
-
-.chipset img {
-    width: 330px;
-}
-
-.chipset-info {
-    padding-right: 15vw;
-    padding-top: 10vh;
-}
-
-#chip-title {
-    font-family: 'Righteous';
-    text-align: left;
-    color: #434343;
-    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
-}
-
-#chip-title i {
-    font-style: normal;
-    color: #B250FF;
-}
-
-.chipset-desc {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    text-align: left;
-}
-
-.chipset-desc h4 {
-    color: #696969;
-    font-family: 'Quicksand';
-    line-height: 4.5vh;
-    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.chipset-info a {
-    font-family: 'Quicksand';
-    text-decoration: none;
-    text-align: left;
-    color: #3284FF;
-}
-
-.camera-showcase {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    background-color: rgb(234, 240, 255);
-    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
-}
-
-.camera-moments {
-    padding-left: 18vw;
-    padding-top: 12vh;
-}
-
-.camera-phones {
-    padding-right: 8vw;
-}
-
-.camera-phones img {
-    width: 400px;
-}
-
-.camera-moments h2 {
-    text-align: left;
-    font-family: 'Righteous';
-    color: #434343;
-    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 8vh;
-}
-
-.camera-moments h2 > i {
-    font-style: normal;
-    color: #12dafd;
-    font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.camera-moments h4 {
-    text-align: left;
-    font-family: 'Quicksand';
-    line-height: 4.5vh;
-    color: #696969;
-    width: 21vw;
-    margin-top: 3.5vh;
-    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-/*.pink-rect {
-    position: absolute;
-    width: 100rem;
-    top: 108rem;
-    left: 70rem;
-    z-index: -1;
-}*/
-
-
-.models {
-    padding-top: 8vh;
-    padding-bottom: 10vh;
-}
-
-.choose {
-    margin-top: 7vh;
-    margin-bottom: 5.5vh;
-}
-
-.choose h2 {
-    font-family: 'Righteous';
-    color: #515151;
-    margin-bottom: 2vh;
-    font-size: calc(24px + (38 - 24) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.choose a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #3284FF;
-}
-
-.r-model,
-.r-pro-model {
-    margin-top: 2vh;
-    position: relative;
-}
-
-.r-model{
-    padding-left: 23vw;
-    padding-top: 40px;
-}
-
-.r-pro-model {
-    padding-left: 13vw;
-}
-
-
-.phone-name {
-    margin-top: 0.8em;
-    font-family: 'Righteous';
-}
-
-.price-from {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-size: 20px;
-}
-
-.phone-name-2 {
-    margin-top: 0.8em;
-    font-family: 'Righteous';
-}
-
-.price-from-2 {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-size: 20px;
-}
-
-.r-model ul {
-    margin-top: 1.5em;
-    padding: 0;
-}
-
-.r-pro-model ul {
-    margin-top: 1.5em;
-    padding: 0;
-}
-
-.r-model ul > li,
-.r-pro-model ul > li{
-    list-style-type: none;
-    font-family: 'Quicksand';
-    margin-bottom: 0.6em;
-}
-
-.models button {
-    margin-top: 1em;
-}
-
-.models a {
-    text-decoration: none;
-}
-
-.footer {
-    background-color: #F8F8F8;
-    font-family: 'Quicksand';
-    padding: 2em 19em;
-    padding-bottom: 1em;
-    text-align: left;
-}
-
-.footer ul {
-    list-style-type: none;
-}
-
-.footer ul > li {
-    margin-bottom: 0.8em;
-}
-
-.footer ul > li a {
-    text-decoration: none;
-    color: #696969;
-}
-
-.footer ul > li a:hover {
-    color: #00ccff;
-}
-
-.list-name {
-    color: black;
-}
-
-.copyright {
-    background-color: #F8F8F8;
-    font-family: 'Quicksand';
-    color: #B0B0B0;
-    padding: 1em 21em;
-}
-
-#last-line {
-    margin: 0;
-    color: #a3a3a3;
-}
-
-form {
-    width: 25em;
-    margin: auto;
-    padding-bottom: 5em;
-}
-
-table, th, td {
-    padding-top: 5px;
-}
-
-.account-title {
-    margin-bottom: 0.7em;
-}
