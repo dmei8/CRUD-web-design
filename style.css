@@ -3,8 +3,12 @@
     width: 100%;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .name {
-    margin-top: 9px;
+    margin-top: 1rem;
     padding-right: 0;
     padding-left: 5vw;
 }
@@ -113,7 +117,7 @@ p {
 
 .drop-menu {
     position: absolute;
-    margin-top: 12px;
+    margin-top: 1rem;
     display: none;
     padding: 0;
 }
@@ -217,7 +221,7 @@ p {
 
 .chipset-info {
     padding-right: 15vw;
-    padding-top: 10vh;
+    padding-top: 8vh;
 }
 
 #chip-title {
@@ -241,7 +245,7 @@ p {
 .chipset-desc h4 {
     color: #696969;
     font-family: 'Quicksand';
-    line-height: 4.5vh;
+    line-height: 1.5em;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -278,7 +282,7 @@ p {
     font-family: 'Righteous';
     color: #434343;
     font-size: calc(24px + (46 - 24) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 8vh;
+    line-height: 1.5em;
 }
 
 .camera-moments h2 > i {
@@ -290,7 +294,7 @@ p {
 .camera-moments h4 {
     text-align: left;
     font-family: 'Quicksand';
-    line-height: 4.5vh;
+    line-height: 1.5em;
     color: #696969;
     width: 21vw;
     margin-top: 3.5vh;
@@ -344,7 +348,6 @@ p {
     padding-left: 13vw;
 }
 
-
 .phone-name {
     margin-top: 0.8em;
     font-family: 'Righteous';
@@ -395,7 +398,7 @@ p {
 .footer {
     background-color: #F8F8F8;
     font-family: 'Quicksand';
-    padding: 5vh 20vw;
+    padding: 5vh 19vw;
     padding-bottom: 1em;
     text-align: left;
 }
@@ -425,7 +428,7 @@ p {
     background-color: #F8F8F8;
     font-family: 'Quicksand';
     color: #B0B0B0;
-    padding: 3vh 21.5vw;
+    padding: 3vh 20.5vw;
 }
 
 #last-line {
@@ -510,6 +513,10 @@ table, th, td {
         width: 30vw;
     }
 
+    .camera-moments {
+        padding-top: 6vh;
+    }
+
     #cameraphones-pic { 
         width: 25vw;
     }
@@ -525,9 +532,20 @@ table, th, td {
          margin-right: 10px;
     }
 
-    #phone-img1,
-    #cameraphones-pic {
+    .camera-phones {
+        padding-top: 3vh;
+    }
+
+    #phone-img1 {
         width: 30vw;
+    }
+
+    #cameraphones-pic {
+        width: 25vw;
+    }
+
+    .camera-phones {
+        padding-top: 7vh;
     }
     
     #purple-phone {
@@ -540,16 +558,18 @@ table, th, td {
     }
 
     .r-model img {
-        width: 11.3em;
+        /*width: 11.3rem;*/
+        width: 9rem;
     }
 
     .r-pro-model img {
-        width: 12em;
+        /*width: 12rem;*/
+        width: 10rem;
     }
 
     .r-model{
         padding-left: 23vw;
-        padding-top: 23px;
+        padding-top: 30px;
     }
     
     .r-pro-model {
@@ -557,12 +577,34 @@ table, th, td {
         padding-right: 10em;
     }
 
+    .chipset {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
     .phone-chipset {
-        padding-top: 10vh;
+        padding-top: 3.5rem;
+        padding-bottom: 2.5rem;
     }
 
     .chipset-info {
-        padding-bottom: 10vh;
+        padding-top: 3.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .camera-showcase {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .camera-moments {
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .camera-phones {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
     #chip-title,
@@ -571,24 +613,117 @@ table, th, td {
         font-size: 2rem;
     }
 
-    #chip-desc,
-    #moments-desc {
+    #moments-intro {
+        line-height: 5vh;
+    }
+
+    #chip-desc {
         font-size: 20px;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     .menu {
         display: none;
     }
 
-    #phone-img1,
+    #phone-img1 {
+        width: 40vw;
+    }
+
     #cameraphones-pic {
         width: 30vw;
     }
 
+    .chipset {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
     #purple-phone {
-        width: 20vw;
+        width: 23vw;
+    }
+
+    .phone-chipset {
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .chipset-info {
+        padding-top: 3.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .camera-phones {
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .camera-showcase {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .camera-moments {
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+        padding-left: 5rem;
+    }
+
+    #moments-desc {
+        width: 30vw;
+    }
+
+    #chip-title,
+    #moments-intro,
+    #moments-intro > i {
+        font-size: 1.5rem;
+    }
+
+    #moments-intro {
+        line-height: 5vh;
+    }
+
+    #chip-desc {
+        font-size: 216px;
+    }
+
+    .models {
+        padding: 5vh;
+    }
+
+    .two-phones {
+        text-align: center;
+    }
+
+    .r-model img {
+        /*width: 11.3rem;*/
+        width: 9rem;
+    }
+
+    .r-pro-model img {
+        /*width: 12rem;*/
+        width: 10rem;
+    }
+
+    .r-model {
+        margin: auto;
+        padding-left: 0;
+    }
+    
+    .r-pro-model {
+        margin: auto;
+        padding-left: 0;
+        padding-top: 3em;
+    }
+
+    .choose h2 {
+        font-size: 1.5rem;;
+    }
+
+    .text-1 ul,
+    .text-2 ul {
+        font-size: 1rem;
     }
 
     .dropdown {
@@ -611,8 +746,10 @@ table, th, td {
 
     .account {
         position: absolute;
+        margin-top: 1.2rem;
         right: 3%;
         width: 22vw;
+        z-index: 1;
     }
 
     .info-items {
@@ -633,7 +770,417 @@ table, th, td {
         padding-left: 8em;
         text-align: center;
     }
+
+    .footer {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .footer div {
+        width: 20vw;
+    }
+
+    .copyright {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .cr1 {
+        width: 55vw;
+    }
+
+    .cr2 {
+        width: 25vw;
+    }
 }
+
+@media only screen and (min-width: 500px) and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    #phone-img1 {
+        width: 50vw;
+    }
+
+    #cameraphones-pic {
+        width: 30vw;
+    }
+
+    .chipset {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #purple-phone {
+        width: 23vw;
+    }
+
+    .phone-chipset {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .chipset-info {
+        padding: 2rem 4rem;
+    }
+
+    .camera-phones {
+        padding-top: 3vh;
+    }
+
+    #chip-title,
+    #moments-intro,
+    #moments-intro > i {
+        font-size: 1.5rem;
+    }
+
+    #chip-title,
+    .chipset-desc h4,
+    .chipset-about a,
+    #moments-intro,
+    #moments-intro > i,
+    #moments-desc {
+        text-align: center;
+    }
+
+    .camera-moments {
+        padding: 2rem 8rem;
+    }
+
+    #moments-desc {
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #moments-intro {
+        line-height: 5vh;
+    }
+
+    #chipset-desc {
+        font-size: 216px;
+    }
+
+    .models {
+        padding: 5vh;
+        margin: 0;
+        width: 100%;
+    }
+
+    .two-phones {
+        text-align: center;
+    }
+
+    .choose h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .phone-name,
+    .phone-name-2 {
+        font-size: 1.2rem;
+    }
+
+    .price-from,
+    .price-from-2 {
+        font-size: 1rem;;
+    }
+
+    .text-1 ul,
+    .text-2 ul {
+        font-size: 0.9rem;
+    }
+
+    .r-model img {
+        /*width: 11.3rem;*/
+        width: 7rem;
+    }
+
+    .r-pro-model img {
+        /*width: 12rem;*/
+        width: 8rem;
+    }
+
+    .r-model {
+        margin: auto;
+        padding-left: 0;
+    }
+    
+    .r-pro-model {
+        margin: auto;
+        padding-left: 0;
+        padding-top: 3em;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .nav-bar {
+        position: relative;
+    }
+    
+    .drop-menu {
+        display: block;
+        position: absolute;
+        left: 50%;
+    }
+
+    .drop-menu:hover .dropdown-items {
+        display: block;
+    }
+
+    .account {
+        position: absolute;
+        margin-top: 1.2rem;
+        right: 3%;
+        width: 22vw;
+        z-index: 1;
+    }
+
+    .info-items {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .price-button-box div {
+        margin-bottom: 0.7em;
+    }
+
+    .price-button-box button {
+        width: 8em;
+    }
+
+    .phones-pic1 {
+        padding-left: 8em;
+        text-align: center;
+    }
+
+    .footer {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        font-size: 0.8rem;
+    }
+
+    .footer ul {
+        padding-left: 0.2em;
+    }
+
+    .footer div {
+        width: 20vw;
+    }
+
+    .copyright {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        font-size: 0.8rem;
+    }
+
+    .cr1 {
+        width: 55vw;
+    }
+
+    .cr2 {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+
+    #phone-img1 {
+        width: 50vw;
+    }
+
+    #cameraphones-pic {
+        width: 7rem;
+        height: 8rem;
+    }
+
+    .chipset {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #purple-phone {
+        width: 6rem;
+    }
+
+    .phone-chipset {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .chipset-info {
+        padding: 2rem 4rem;
+    }
+
+    #chip-title,
+    #moments-intro,
+    #moments-intro > i {
+        font-size: 1.5rem;
+    }
+
+    #chip-title,
+    .chipset-desc h4,
+    .chipset-about a,
+    #moments-intro,
+    #moments-intro > i,
+    #moments-desc {
+        text-align: center;
+    }
+
+    .camera-moments {
+        padding: 2rem 5rem;
+    }
+
+    #moments-desc {
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #moments-intro {
+        line-height: 5vh;
+    }
+
+    #chipset-desc {
+        font-size: 216px;
+    }
+
+    .models {
+        padding: 5vh;
+        margin: 0;
+        width: 100%;
+    }
+
+    .two-phones {
+        text-align: center;
+    }
+
+    .choose h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .phone-name,
+    .phone-name-2 {
+        font-size: 1.2rem;
+    }
+
+    .price-from,
+    .price-from-2 {
+        font-size: 1rem;;
+    }
+
+    .text-1 ul,
+    .text-2 ul {
+        font-size: 0.9rem;
+    }
+
+    .r-model img {
+        /*width: 11.3rem;*/
+        width: 6rem;
+        padding-top: 0;
+    }
+
+    .r-pro-model img {
+        /*width: 12rem;*/
+        width: 7rem;
+    }
+
+    .r-model {
+        margin: auto;
+        padding-left: 0;
+    }
+    
+    .r-pro-model {
+        margin: auto;
+        padding-left: 0;
+        padding-top: 3em;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .nav-bar {
+        position: relative;
+    }
+    
+    .drop-menu {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-top: 0.7rem;
+    }
+
+    .drop-menu:hover .dropdown-items {
+        display: block;
+    }
+
+    .account {
+        position: absolute;
+        margin-top: 1rem;
+        right: 3%;
+        width: 35vw;
+        z-index: 1;
+    }
+
+    .info-items {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .price-button-box div {
+        margin-bottom: 0.7em;
+    }
+
+    .price-button-box button {
+        width: 8em;
+    }
+
+    .phones-pic1 {
+        padding-left: 4rem;
+        text-align: center;
+    }
+
+    .footer {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        font-size: 0.6rem;
+    }
+
+    .footer ul {
+        padding-left: 0.2em;
+    }
+
+    .footer div {
+        width: 20vw;
+    }
+
+    .copyright {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        font-size: 0.6rem;
+    }
+
+    .cr1 {
+        width: 55vw;
+    }
+
+    .cr2 {
+        width: 25vw;
+    }
+}
+
 /*@media only screen and (min-width: 1024px) and (max-width: 1199px) {
     #dropdown,
     .dropdown-items {
