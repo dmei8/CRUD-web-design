@@ -23,7 +23,7 @@ html, body {
 /* Navigation bar */
 
 .nav-bar {
-    padding-bottom: 2.3vh;
+    padding-bottom: 1.5vh;
 }
 
 .menu {
@@ -259,13 +259,13 @@ p {
 .camera-showcase {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    background-color: rgb(234, 240, 255);
+    background-color: #DEF9FF;
     box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
 }
 
 .camera-moments {
     padding-left: 18vw;
-    padding-top: 12vh;
+    padding-top: 4rem;
     padding-right: 0;
 }
 
@@ -450,6 +450,10 @@ table, th, td {
     margin-bottom: 0.7em;
 }
 
+form > div > label,
+form > .btn {
+    font-family: 'Quicksand';
+}
 
 @media only screen and (min-width: 2561px) and (max-width: 5120px) {
     #phone-img1,
@@ -1155,7 +1159,6 @@ table, th, td {
     .footer {
         padding-left: 8vw;
         padding-right: 8vw;
-        font-size: 0.6rem;
     }
 
     .footer ul {
